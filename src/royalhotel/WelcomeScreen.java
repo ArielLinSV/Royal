@@ -121,7 +121,6 @@ public class WelcomeScreen extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new WelcomeScreen().setVisible(true);
-                
             }
         });
     }

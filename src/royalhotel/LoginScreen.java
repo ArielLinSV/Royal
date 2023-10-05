@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package royalhotel;
 
 import com.formdev.flatlaf.FlatLightLaf;
@@ -10,18 +6,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 /**
- *
  * @author Ariel L
  */
 public class LoginScreen extends javax.swing.JFrame {
-
-    /**
-     * Creates new form LoginScreen
-     */
+    
     public LoginScreen() {
         initComponents();
         this.setLocationRelativeTo(null);
-        setIconImage(new ImageIcon(getClass().getResource("/imgs/RoyalHotelImajotipoMini.png")).getImage());
+        setIconImage(new ImageIcon(getClass().
+                getResource("/imgs/RoyalHotelImajotipoMini.png")).getImage());
     }
     
     @SuppressWarnings("unchecked")
@@ -133,8 +126,7 @@ public class LoginScreen extends javax.swing.JFrame {
         FlatLightLaf.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginScreen().setVisible(true);
-                
+                new LoginScreen().setVisible(true);    
             }
         });
     }
