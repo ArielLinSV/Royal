@@ -38,6 +38,7 @@ public class WelcomeScreen extends javax.swing.JFrame {
 
         LoginButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         LoginButton.setText("Login");
+        LoginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         LoginButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 LoginButtonMousePressed(evt);
@@ -46,6 +47,7 @@ public class WelcomeScreen extends javax.swing.JFrame {
 
         CreateAcountButton.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         CreateAcountButton.setText("Create acount");
+        CreateAcountButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         CreateAcountButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 CreateAcountButtonMousePressed(evt);

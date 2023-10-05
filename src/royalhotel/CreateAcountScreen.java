@@ -31,6 +31,7 @@ public class CreateAcountScreen extends javax.swing.JFrame {
         Mail = new javax.swing.JLabel();
         LastNameTextField1 = new javax.swing.JTextField();
         ImajotipoIcon3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(350, 500));
@@ -46,9 +47,11 @@ public class CreateAcountScreen extends javax.swing.JFrame {
         LastName.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         LastName.setText("Last Name");
 
-        NameTextField.setText("jTextField1");
+        NameTextField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        NameTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        MailTextField.setText("jTextField1");
+        MailTextField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        MailTextField.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         BackIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/BackIcon.png"))); // NOI18N
         BackIcon.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -60,7 +63,8 @@ public class CreateAcountScreen extends javax.swing.JFrame {
         Mail.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         Mail.setText("Mail");
 
-        LastNameTextField1.setText("jTextField1");
+        LastNameTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        LastNameTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         LastNameTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LastNameTextField1ActionPerformed(evt);
@@ -68,6 +72,9 @@ public class CreateAcountScreen extends javax.swing.JFrame {
         });
 
         ImajotipoIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/RoyalHotelImajotipoMini.png"))); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel1.setText("Next");
 
         javax.swing.GroupLayout BackGroundLogoLayout = new javax.swing.GroupLayout(BackGroundLogo);
         BackGroundLogo.setLayout(BackGroundLogoLayout);
@@ -87,10 +94,15 @@ public class CreateAcountScreen extends javax.swing.JFrame {
                     .addComponent(Mail)
                     .addComponent(LastNameTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(BackGroundLogoLayout.createSequentialGroup()
-                .addComponent(BackIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ImajotipoIcon3)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackGroundLogoLayout.createSequentialGroup()
+                .addGroup(BackGroundLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(BackGroundLogoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1))
+                    .addGroup(BackGroundLogoLayout.createSequentialGroup()
+                        .addComponent(BackIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ImajotipoIcon3)))
                 .addGap(159, 159, 159))
         );
         BackGroundLogoLayout.setVerticalGroup(
@@ -107,17 +119,17 @@ public class CreateAcountScreen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(LastNameTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Mail)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(BackGroundLogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(BackGroundLogoLayout.createSequentialGroup()
-                        .addComponent(Mail)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(MailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 93, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BackGroundLogoLayout.createSequentialGroup()
                         .addComponent(BackIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
-                    .addGroup(BackGroundLogoLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(ImajotipoIcon3))))
+                    .addComponent(ImajotipoIcon3, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -164,5 +176,6 @@ public class CreateAcountScreen extends javax.swing.JFrame {
     private javax.swing.JTextField MailTextField;
     private javax.swing.JLabel Name;
     private javax.swing.JTextField NameTextField;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
